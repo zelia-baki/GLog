@@ -1,6 +1,6 @@
 package iut.bad;
 
-public class humain {
+public class humain implements Consommation {
 
 	@Override
 	public String toString() {
@@ -12,10 +12,20 @@ public class humain {
 	    System.out.println(this);
 	}
 	
+	/* (non-Javadoc)
+	 * @see iut.bad.Consommation#manger()
+	 */
+	
+	@Override
 	public void manger() {
 	    System.out.println(prenom + " mange.");
 	}
 
+	/* (non-Javadoc)
+	 * @see iut.bad.Consommation#boire()
+	 */
+	
+	@Override
 	public void boire() {
 	    System.out.println(prenom + " boit.");
 	}
