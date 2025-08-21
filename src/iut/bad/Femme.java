@@ -1,9 +1,7 @@
 package iut.bad;
 
-public class Femme {
-
-	public Femme() {
-		//TODO Auto-generated constructor stub
-	}
-
+public class Femme extends humain {
+    public Femme(String nom, String prenom, int age) {
+        super(nom, prenom, age);
+    }
 }
