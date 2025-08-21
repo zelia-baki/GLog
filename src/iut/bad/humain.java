@@ -9,7 +9,7 @@ public class humain {
 	
 	
 	public void details() {
-	    System.out.println(nom + " " + prenom + " (" + age + " ans)");
+	    System.out.println(this);
 	}
 
 
