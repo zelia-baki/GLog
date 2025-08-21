@@ -11,6 +11,14 @@ public class humain {
 	public void details() {
 	    System.out.println(this);
 	}
+	
+	public void manger() {
+	    System.out.println(prenom + " mange.");
+	}
+
+	public void boire() {
+	    System.out.println(prenom + " boit.");
+	}
 
 
 
