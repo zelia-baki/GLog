@@ -40,12 +40,16 @@ public class humain implements Consommation {
 	protected String prenom;
 	protected int age;
 	
-	public void amis(humain h) {
+	public void amis(humain h, int duree) {
 		if (h != null && h!= this) {
 			this.amis.add(h);
 			h.amis.add(this);
 		}
 	    System.out.println(this.prenom + " est ami avec " + h.prenom);
+	}
+	
+	public void amis(humain h) {
+	    amis(h, 100); // par défaut 100 jours
 	}
 	
 	

@@ -19,9 +19,13 @@ public class Femme extends humain  {
 	        h.details();
 	        f.details();
 	        
+//	        System.out.println("\nDéclaration d'amitié :");
+//	        h.amis(f);   // TSIMIJALY est ami avec Gaby
+//	        f.amis(h);   // Gaby est amie avec TSIMIJALY
+//	        
 	        System.out.println("\nDéclaration d'amitié :");
 	        h.amis(f);   // TSIMIJALY est ami avec Gaby
-	        f.amis(h);   // Gaby est amie avec TSIMIJALY
+	        f.amis(h, 50);
 	 }
 	
 }
