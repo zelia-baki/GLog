@@ -45,7 +45,8 @@ public class humain implements Consommation {
 			this.amis.add(h);
 			h.amis.add(this);
 		}
-	    System.out.println(this.prenom + " est ami avec " + h.prenom);
+	    System.out.println(this.prenom + " est ami avec " + h.prenom + " pour " + duree + " jours.");
+
 	}
 	
 	public void amis(humain h) {
@@ -55,7 +56,7 @@ public class humain implements Consommation {
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(age, amis, nom, prenom);
+		return Objects.hash(age, nom, prenom);
 	}
 
 
@@ -68,8 +69,7 @@ public class humain implements Consommation {
 		if (getClass() != obj.getClass())
 			return false;
 		humain other = (humain) obj;
-		return age == other.age && Objects.equals(amis, other.amis) && Objects.equals(nom, other.nom)
-				&& Objects.equals(prenom, other.prenom);
+		return age == other.age && Objects.equals(nom, other.nom) && Objects.equals(prenom, other.prenom);
 	}
 
 

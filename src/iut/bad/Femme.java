@@ -24,8 +24,9 @@ public class Femme extends humain  {
 //	        f.amis(h);   // Gaby est amie avec TSIMIJALY
 //	        
 	        System.out.println("\nDéclaration d'amitié :");
-	        h.amis(f);   // TSIMIJALY est ami avec Gaby
-	        f.amis(h, 50);
+	        h.amis(f);   // utilise la version avec 100 jours par défaut
+	        f.amis(h, 200);// version avec durée personnalisée
+
 	 }
 	
 }
